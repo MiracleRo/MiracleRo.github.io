@@ -7,17 +7,19 @@
   
   <title>简单的命令行使用 | miraclero&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="简单的命令的使用 ls:    ls命令为列出目录内容.   除了列出当前目录,也可以列出指定目录的内容.常用可选参数： 选项|描述 —|:–: -a | 列出所有文件,包括隐藏文件 -l | 以长格式显示结果。 -h | 当以长格式列出时，以人们可读的格式，而不是以字节数来显示文件的大小。 -t | 按照修改时间来排序。 -r | 以相反的顺序来显示结果。通常，ls 命令的输出结果按照字母升序排">
+  <meta name="description" content="简单的命令的使用(一)ls:ls命令为列出目录内容.除了列出当前目录,也可以列出指定目录的内容.   常用可选参数：      选项 描述     -a 列出所有文件,包括隐藏文件   -l 以长格式显示结果。   -h 当以长格式列出时，以人们可读的格式，而不是以字节数来显示文件的大小。   -t 按照修改时间来排序。   -r 以相反的顺序来显示结果。通常，ls 命令的输出结果按照字母升序排列">
 <meta property="og:type" content="article">
 <meta property="og:title" content="简单的命令行使用">
 <meta property="og:url" content="http://yoursite.com/2019/02/23/简单的命令行使用/index.html">
 <meta property="og:site_name" content="miraclero&#39;s blog">
-<meta property="og:description" content="简单的命令的使用 ls:    ls命令为列出目录内容.   除了列出当前目录,也可以列出指定目录的内容.常用可选参数： 选项|描述 —|:–: -a | 列出所有文件,包括隐藏文件 -l | 以长格式显示结果。 -h | 当以长格式列出时，以人们可读的格式，而不是以字节数来显示文件的大小。 -t | 按照修改时间来排序。 -r | 以相反的顺序来显示结果。通常，ls 命令的输出结果按照字母升序排">
+<meta property="og:description" content="简单的命令的使用(一)ls:ls命令为列出目录内容.除了列出当前目录,也可以列出指定目录的内容.   常用可选参数：      选项 描述     -a 列出所有文件,包括隐藏文件   -l 以长格式显示结果。   -h 当以长格式列出时，以人们可读的格式，而不是以字节数来显示文件的大小。   -t 按照修改时间来排序。   -r 以相反的顺序来显示结果。通常，ls 命令的输出结果按照字母升序排列">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-02-23T07:39:18.239Z">
+<meta property="og:image" content="https://i.loli.net/2019/02/23/5c7100aa3db15.png">
+<meta property="og:updated_time" content="2019-02-23T08:14:19.708Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="简单的命令行使用">
-<meta name="twitter:description" content="简单的命令的使用 ls:    ls命令为列出目录内容.   除了列出当前目录,也可以列出指定目录的内容.常用可选参数： 选项|描述 —|:–: -a | 列出所有文件,包括隐藏文件 -l | 以长格式显示结果。 -h | 当以长格式列出时，以人们可读的格式，而不是以字节数来显示文件的大小。 -t | 按照修改时间来排序。 -r | 以相反的顺序来显示结果。通常，ls 命令的输出结果按照字母升序排">
+<meta name="twitter:description" content="简单的命令的使用(一)ls:ls命令为列出目录内容.除了列出当前目录,也可以列出指定目录的内容.   常用可选参数：      选项 描述     -a 列出所有文件,包括隐藏文件   -l 以长格式显示结果。   -h 当以长格式列出时，以人们可读的格式，而不是以字节数来显示文件的大小。   -t 按照修改时间来排序。   -r 以相反的顺序来显示结果。通常，ls 命令的输出结果按照字母升序排列">
+<meta name="twitter:image" content="https://i.loli.net/2019/02/23/5c7100aa3db15.png">
   
     <link rel="alternate" href="/atom.xml" title="miraclero&#39;s blog" type="application/atom+xml">
   
@@ -86,37 +88,89 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="简单的命令的使用"><a href="#简单的命令的使用" class="headerlink" title="简单的命令的使用"></a>简单的命令的使用</h2><ol>
-<li><p>ls:   </p>
-<p>ls命令为列出目录内容.  </p>
-<p>除了列出当前目录,也可以列出指定目录的内容.<br>常用可选参数：<br> 选项|描述<br> —|:–:<br> -a | 列出所有文件,包括隐藏文件<br> -l | 以长格式显示结果。<br> -h | 当以长格式列出时，以人们可读的格式，而不是以字节数来显示文件的大小。<br> -t | 按照修改时间来排序。<br> -r | 以相反的顺序来显示结果。通常，ls 命令的输出结果按照字母升序排列。</p>
-<p> 使用方法： ls -选项即可， 如列出所有文件： </p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ls -a</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>cat:</p>
-<p>cat命令为链接文件,命令读取一个或多个文件，然后复制它们到标准输出(显示到终端)。<br>你可以使用 cat 来显示文件而没有分页，例如读取ls-output.txt：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat ls-output.txt</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>mv:</p>
-<p>mv命令为移动和重命名文件,这依赖于你怎样使用它。<br>实例：<br>命令|描述<br> —|:–:<br> mv file1 file2| 移动 file1 到 file2。如果 file2 存在，它的内容会被 file1 的内容重写。 如果 file2 不存在，则创建 file2。 这两种情况下，file1 都不再存在。<br> mv file1 file2 dir1 | 移动 file1 和 file2 到目录 dir1 中。dir1 必须已经存在。</p>
-<p> 例如： 将1.txt重命名为2.txt(2.txt不存在的情况下)</p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mv 1.txt 2.txt</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>touch:</p>
-<p> touch命令用于创建空文件，或者改变文件的时间戳属性。<br> 可选参数：<br> 选项|描述<br> —|:–:<br> -t | 将文件上的时间设置为特定的日期和时间<br> -r | 使用文件中的时间设置第二个文件的时间</p>
-<p> 例如创建test.txt:</p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">touch test.txt</span><br></pre></td></tr></table></figure>
-<p> 将test.txt时间设置为YYYYMMDDHHMM.SS:</p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">touch -t 201901022312.00 test.txt</span><br></pre></td></tr></table></figure>
-<p> 将test2.txt时间设置为test1.txt的时间</p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">touch -r test1.txt test2.txt</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
+        <h2 id="简单的命令的使用"><a href="#简单的命令的使用" class="headerlink" title="简单的命令的使用"></a>简单的命令的使用</h2><h3 id="一-ls"><a href="#一-ls" class="headerlink" title="(一)ls:"></a>(一)ls:</h3><p>ls命令为列出目录内容.<br>除了列出当前目录,也可以列出指定目录的内容.<br>   常用可选参数：  </p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th style="text-align:center">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-a</td>
+<td style="text-align:center">列出所有文件,包括隐藏文件</td>
+</tr>
+<tr>
+<td>-l</td>
+<td style="text-align:center">以长格式显示结果。</td>
+</tr>
+<tr>
+<td>-h</td>
+<td style="text-align:center">当以长格式列出时，以人们可读的格式，而不是以字节数来显示文件的大小。</td>
+</tr>
+<tr>
+<td>-t</td>
+<td style="text-align:center">按照修改时间来排序。</td>
+</tr>
+<tr>
+<td>-r</td>
+<td style="text-align:center">以相反的顺序来显示结果。通常，ls 命令的输出结果按照字母升序排列。</td>
+</tr>
+</tbody>
+</table>
+<p>使用方法： ls -选项即可， 如列出所有文件：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ls -a</span><br></pre></td></tr></table></figure></p>
+<h3 id="二-cat"><a href="#二-cat" class="headerlink" title="(二) cat:"></a>(二) cat:</h3><p>cat命令为链接文件,命令读取一个或多个文件，然后复制它们到标准输出(显示到终端)。<br>你可以使用 cat 来显示文件而没有分页，例如读取ls-output.txt：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat ls-output.txt</span><br></pre></td></tr></table></figure></p>
+<h3 id="三-mv"><a href="#三-mv" class="headerlink" title="(三) mv:"></a>(三) mv:</h3><p>mv命令为移动和重命名文件,这依赖于你怎样使用它。<br>   实例：  </p>
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th style="text-align:center">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>mv file1 file2</td>
+<td style="text-align:center">移动 file1 到 file2。如果 file2 存在，它的内容会被 file1 的内容重写。 如果 file2 不存在，则创建 file2。 这两种情况下，file1 都不再存在。</td>
+</tr>
+<tr>
+<td>mv file1 file2 dir1</td>
+<td style="text-align:center">移动 file1 和 file2 到目录 dir1 中。dir1 必须已经存在。</td>
+</tr>
+</tbody>
+</table>
+<p>例如： 将1.txt重命名为2.txt(2.txt不存在的情况下)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mv 1.txt 2.txt</span><br></pre></td></tr></table></figure>
+<h3 id="四-touch"><a href="#四-touch" class="headerlink" title="(四) touch:"></a>(四) touch:</h3><p>touch命令用于创建空文件，或者改变文件的时间戳属性。<br>可选参数：    </p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th style="text-align:center">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-t</td>
+<td style="text-align:center">将文件上的时间设置为特定的日期和时间</td>
+</tr>
+<tr>
+<td>-r</td>
+<td style="text-align:center">使用文件中的时间设置第二个文件的时间</td>
+</tr>
+</tbody>
+</table>
+<p>例如创建test.txt:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">touch test.txt</span><br></pre></td></tr></table></figure>
+<p>将test.txt时间设置为YYYYMMDDHHMM.SS:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">touch -t 201901022312.00 test.txt</span><br></pre></td></tr></table></figure></p>
+<p>将test2.txt时间设置为test1.txt的时间<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">touch -r test1.txt test2.txt</span><br></pre></td></tr></table></figure></p>
+<h2 id="也可以使用-explainshell-com-使用说明如图"><a href="#也可以使用-explainshell-com-使用说明如图" class="headerlink" title="也可以使用 explainshell.com 使用说明如图"></a>也可以使用 explainshell.com 使用说明如图</h2><p><a href="https://i.loli.net/2019/02/23/5c7100aa3db15.png" target="_blank" rel="noopener"><img src="https://i.loli.net/2019/02/23/5c7100aa3db15.png" alt="BA7811B1-ABB8-45C2-AFD1-7272F56B6831.png"></a></p>
 <h3 id="本次只是总计了这4种命令的基本用法，如果有什么错误请联系我：741556866-qq-com"><a href="#本次只是总计了这4种命令的基本用法，如果有什么错误请联系我：741556866-qq-com" class="headerlink" title="本次只是总计了这4种命令的基本用法，如果有什么错误请联系我：741556866@qq.com"></a>本次只是总计了这4种命令的基本用法，如果有什么错误请联系我：<a href="mailto:741556866@qq.com" target="_blank" rel="noopener">741556866@qq.com</a></h3>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/02/23/简单的命令行使用/" data-id="cjsh6c1ep0000ea3dnyr36e98" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/02/23/简单的命令行使用/" data-id="cjsh6n9n90000o03dqrnk5mn4" class="article-share-link">Share</a>
       
       
     </footer>
