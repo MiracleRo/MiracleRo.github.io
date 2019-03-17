@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="JS,">
 
 
 
@@ -79,13 +79,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="miraclero&#39;s blog">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+<meta name="description" content="今天在学习的时候看到了==这个操作符的算法，之前就有了解过，所以在这里向总结一下。虽然 ==这个操作符在日常开发并不经常使用，甚至不能通过Eslint。但是我认为还是要明白这其中的原理。 ==操作符只会产生true或false，例如x==y,会按照如下方式进行:  如果Type(x)和Type(y)相等：a. 若Type(x)为Undefined，返回trueb. 若Type(x)为Null，返回">
+<meta name="keywords" content="JS">
+<meta property="og:type" content="article">
+<meta property="og:title" content="浅谈==">
+<meta property="og:url" content="http://yoursite.com/2019/03/11/浅/index.html">
 <meta property="og:site_name" content="miraclero&#39;s blog">
+<meta property="og:description" content="今天在学习的时候看到了==这个操作符的算法，之前就有了解过，所以在这里向总结一下。虽然 ==这个操作符在日常开发并不经常使用，甚至不能通过Eslint。但是我认为还是要明白这其中的原理。 ==操作符只会产生true或false，例如x==y,会按照如下方式进行:  如果Type(x)和Type(y)相等：a. 若Type(x)为Undefined，返回trueb. 若Type(x)为Null，返回">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-03-11T15:25:38.502Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="miraclero&#39;s blog">
+<meta name="twitter:title" content="浅谈==">
+<meta name="twitter:description" content="今天在学习的时候看到了==这个操作符的算法，之前就有了解过，所以在这里向总结一下。虽然 ==这个操作符在日常开发并不经常使用，甚至不能通过Eslint。但是我认为还是要明白这其中的原理。 ==操作符只会产生true或false，例如x==y,会按照如下方式进行:  如果Type(x)和Type(y)相等：a. 若Type(x)为Undefined，返回trueb. 若Type(x)为Null，返回">
 
 
 
@@ -115,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/archives/">
+  <link rel="canonical" href="http://yoursite.com/2019/03/11/浅/">
 
 
 
 
 
-  <title>归档 | miraclero's blog</title>
+  <title>浅谈== | miraclero's blog</title>
   
 
 
@@ -140,7 +145,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -234,282 +239,196 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
+  <div id="posts" class="posts-expand">
+    
 
-      <span class="archive-page-counter">
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/11/浅/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="miraclero">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="miraclero's blog">
+    </span>
+
+    
+      <header class="post-header">
+
         
         
+          <h1 class="post-title" itemprop="name headline">浅谈==</h1>
         
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-03-11T22:01:53+08:00">
+                2019-03-11
+              </time>
+            
+
+            
+
+            
+          </span>
+
           
-        
-        嗯..! 目前共计 7 篇日志。 继续努力。
-      </span>
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/学习笔记/" itemprop="url" rel="index">
+                    <span itemprop="name">学习笔记</span>
+                  </a>
+                </span>
 
-      
-
-        
-        
-        
-
-        
+                
+                
+              
+            </span>
           
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2019">2019</h1>
-          </div>
-        
-        
 
-        
+          
+            
+          
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+          
+          
 
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/03/17/css布局/" itemprop="url">
-              
-                <span itemprop="name">css布局</span>
-              
-            </a>
-        
-      </h2>
+          
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-03-17T21:32:00+08:00" content="2019-03-17">
-          03-17
-        </time>
-      </div>
+          
 
-    </header>
-  </article>
+          
 
+        </div>
+      </header>
+    
 
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/03/11/浅/" itemprop="url">
-              
-                <span itemprop="name">浅谈==</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-03-11T22:01:53+08:00" content="2019-03-11">
-          03-11
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
 
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/03/11/随便说的/" itemprop="url">
-              
-                <span itemprop="name">随便写点什么</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-03-11T21:00:14+08:00" content="2019-03-11">
-          03-11
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
+      
+        <p>今天在学习的时候看到了<code>==</code>这个操作符的算法，之前就有了解过，所以在这里向总结一下。虽然 <code>==</code>这个操作符在日常开发并不经常使用，甚至不能通过Eslint。但是我认为还是要明白这其中的原理。</p>
+<p><code>==</code>操作符只会产生<code>true</code>或<code>false</code>，例如x<code>==</code>y,会按照如下方式进行:</p>
+<ol>
+<li><p>如果Type(x)和Type(y)相等：<br>a. 若Type(x)为<code>Undefined</code>，返回<code>true</code><br>b. 若Type(x)为<code>Null</code>，返回<code>true</code><br>c. 若Type(x)为<code>Number</code>:       </p>
+<ul>
+<li>x为<code>NaN</code>,返回<code>false</code></li>
+<li>y为<code>NaN</code>,返回<code>false</code></li>
+<li>x与y数值相等，返回<code>true</code></li>
+<li>x为<code>+0</code>，y为<code>-0</code>，返回<code>true</code></li>
+<li>x为<code>-0</code>，x为<code>+0</code>，返回<code>true</code>  </li>
+<li>返回<code>false</code></li>
+</ul>
+<p>d. 若Type(x)为<code>String</code>，则x和y为完全相同的字符序列是返回<code>true</code>，否则返回<code>false</code><br>e. 若Type(x)为<code>Boolean</code>，则x和y同为<code>true</code>或<code>false</code>返回<code>true</code>，否则返回<code>false</code><br>f. 若Type(x)为<code>Ojbect</code>，则x和y指向同一引用对象返回<code>true</code>, 否则返回<code>false</code></p>
+</li>
+<li>若x为<code>Undefined</code>且y为<code>Null</code>，或x为<code>Null</code>且y为<code>Undefined</code>返回<code>true</code>，否则返回<code>false</code></li>
+<li>若Type(x)为<code>String</code>，且Type(y)为<code>Number</code>，返回 ToNumber(x)<code>==</code>y的结果</li>
+<li>若Type(x)为<code>Number</code>，且Type(y)为<code>String</code>，返回x<code>==</code>ToNumber(y)的结果</li>
+<li>若Type(x)为<code>Boolean</code>，返回ToNumber(x) <code>==</code>y的结果</li>
+<li>若Type(y)为<code>Boolean</code>，返回x <code>==</code>ToNumber(y)的结果</li>
+<li>若Type(x)为<code>Object</code>，且Type(y)为<code>String</code>或<code>Number</code>，返回ToPrimitive(x) <code>==</code>y的结果</li>
+<li>若Type(x)为<code>String</code>或<code>Number</code>，且Type(y)为<code>Object</code>，返回x<code>==</code>ToPrimitvie(y)的结果 </li>
+</ol>
+<p>举个例子：[ ]<code>==</code>![ ]：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 首先将![]转换为`Boolean`类型</span></span><br><span class="line">[] == <span class="literal">false</span></span><br><span class="line"><span class="comment">// 根据第6条 返回 [] == ToNumber(false)</span></span><br><span class="line">[] == <span class="number">0</span></span><br><span class="line"><span class="comment">// 根据第7条 返回 ToPrimitive([]) == 0</span></span><br><span class="line"><span class="comment">// [].toString() -&gt; ''</span></span><br><span class="line"><span class="string">''</span> == <span class="number">0</span></span><br><span class="line"><span class="comment">// 根据第3条 返回 ToNmber('') == 0</span></span><br><span class="line"><span class="number">0</span> == <span class="number">0</span> <span class="comment">// true</span></span><br></pre></td></tr></table></figure></p>
+<p>PS: 这个ToPrimitive()方法打算也要写一篇笔记</p>
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/03/05/css布局小技巧/" itemprop="url">
-              
-                <span itemprop="name">css布局小技巧</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-03-05T21:58:03+08:00" content="2019-03-05">
-          03-05
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/03/04/常见html标签的使用/" itemprop="url">
-              
-                <span itemprop="name">常见html标签的使用</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-03-04T20:59:18+08:00" content="2019-03-04">
-          03-04
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/02/24/http请求/" itemprop="url">
-              
-                <span itemprop="name">http请求</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-02-24T22:06:07+08:00" content="2019-02-24">
-          02-24
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/02/23/简单的命令行使用/" itemprop="url">
-              
-                <span itemprop="name">简单的命令行使用</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-02-23T14:41:18+08:00" content="2019-02-23">
-          02-23
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/JS/" rel="tag"># JS</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/03/11/随便说的/" rel="next" title="随便写点什么">
+                <i class="fa fa-chevron-left"></i> 随便写点什么
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/03/17/css布局/" rel="prev" title="css布局">
+                css布局 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -517,6 +436,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -738,6 +661,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
