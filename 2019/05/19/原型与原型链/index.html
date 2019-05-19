@@ -79,14 +79,23 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="categories">
-<meta property="og:url" content="http://yoursite.com/categories/index.html">
+<meta name="description" content="浅谈原型与原型链 首先思考下面问题, 我们在平时使用的对象,都会有一些内置的方法.那么这些方法和属性是怎么来的呢?   如下图所示, 我新建了一个对象, 在控制台中, 有一个__proto__的属性, 里面使用的方法都在这个__proto__属性里.  也就是说, obj这个这个对象本事是没有toString()这个方法的.它是通过查找__proto__属性下的toString()来使用的.  那">
+<meta property="og:type" content="article">
+<meta property="og:title" content="原型与原型链">
+<meta property="og:url" content="http://yoursite.com/2019/05/19/原型与原型链/index.html">
 <meta property="og:site_name" content="miraclero&#39;s blog">
+<meta property="og:description" content="浅谈原型与原型链 首先思考下面问题, 我们在平时使用的对象,都会有一些内置的方法.那么这些方法和属性是怎么来的呢?   如下图所示, 我新建了一个对象, 在控制台中, 有一个__proto__的属性, 里面使用的方法都在这个__proto__属性里.  也就是说, obj这个这个对象本事是没有toString()这个方法的.它是通过查找__proto__属性下的toString()来使用的.  那">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-03-11T12:59:19.584Z">
+<meta property="og:image" content="https://s2.ax1x.com/2019/05/19/EjFp7T.md.png">
+<meta property="og:image" content="https://s2.ax1x.com/2019/05/19/EjkHzj.md.png">
+<meta property="og:image" content="https://s2.ax1x.com/2019/05/19/EjAy7V.md.png">
+<meta property="og:image" content="https://s2.ax1x.com/2019/05/19/EjepH1.md.png">
+<meta property="og:image" content="https://s2.ax1x.com/2019/05/19/EjeMUP.md.png">
+<meta property="og:updated_time" content="2019-05-19T08:17:19.565Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="categories">
+<meta name="twitter:title" content="原型与原型链">
+<meta name="twitter:description" content="浅谈原型与原型链 首先思考下面问题, 我们在平时使用的对象,都会有一些内置的方法.那么这些方法和属性是怎么来的呢?   如下图所示, 我新建了一个对象, 在控制台中, 有一个__proto__的属性, 里面使用的方法都在这个__proto__属性里.  也就是说, obj这个这个对象本事是没有toString()这个方法的.它是通过查找__proto__属性下的toString()来使用的.  那">
+<meta name="twitter:image" content="https://s2.ax1x.com/2019/05/19/EjFp7T.md.png">
 
 
 
@@ -116,13 +125,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/categories/">
+  <link rel="canonical" href="http://yoursite.com/2019/05/19/原型与原型链/">
 
 
 
 
 
-  <title>categories | miraclero's blog</title>
+  <title>原型与原型链 | miraclero's blog</title>
   
 
 
@@ -237,40 +246,164 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/19/原型与原型链/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="miraclero">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="miraclero's blog">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">categories</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <div class="category-all-page">
-            <div class="category-all-title">
-                目前共计 3 个分类
-            </div>
-            <div class="category-all">
-              <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/css/">css</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/学习笔记/">学习笔记</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/随便写写/">随便写写</a><span class="category-list-count">1</span></li></ul>
-            </div>
-          </div>
+          <h1 class="post-title" itemprop="name headline">原型与原型链</h1>
         
-      </div>
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-19T14:53:46+08:00">
+                2019-05-19
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <h2 id="浅谈原型与原型链"><a href="#浅谈原型与原型链" class="headerlink" title="浅谈原型与原型链"></a>浅谈原型与原型链</h2><ol>
+<li>首先思考下面问题, 我们在平时使用的对象,都会有一些内置的方法.那么这些方法和属性是怎么来的呢? </li>
+</ol>
+<p>如下图所示, 我新建了一个对象, 在控制台中, 有一个<code>__proto__</code>的属性, 里面使用的方法都在这个<code>__proto__</code>属性里.</p>
+<p><a href="https://imgchr.com/i/EjFp7T" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2019/05/19/EjFp7T.md.png" alt="EjFp7T.md.png"></a></p>
+<p>也就是说, <code>obj</code>这个这个对象本事是没有<code>toString()</code>这个方法的.它是通过查找<code>__proto__</code>属性下的<code>toString()</code>来使用的.</p>
+<ol start="2">
+<li>那么如果<code>obj</code>对象本事有<code>toString()</code>方法呢?</li>
+</ol>
+<p><a href="https://imgchr.com/i/EjkHzj" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2019/05/19/EjkHzj.md.png" alt="EjkHzj.md.png"></a></p>
+<p>由上图可以发现,对象在调用方法或属性的时候,会首先使用自己的方法,如果没有,就会在它的<code>__proto__</code>属性中查找,它也是一个对象,也会有<code>__proto__</code>属性,这样一层一层的找,一直到<code>Ojbect</code>为止.如果有就返回属性,没有会返回<code>undefined</code>.这个过程产生的链,就叫做<code>原型链</code></p>
+<ol start="3">
+<li>不知道大家对obj的<code>__proto__</code>属性是不是有点面熟呢?<br>没错,obj的<code>__proto__</code>属性和<code>Object</code>的<code>prototype</code>属性是一样的</li>
+</ol>
+<p><a href="https://imgchr.com/i/EjAy7V" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2019/05/19/EjAy7V.md.png" alt="EjAy7V.md.png"></a></p>
+<p>通过上图,我们可以得到一个结论.</p>
+<p>对象的<code>__proto__</code>属性,就是创建它的函数的<code>prototype</code>属性<br>有的同学会问了,之前创建对象都是 <code>var a = {}</code>,图上的是<code>var a = new Object</code>. 其实这两种方法是等价的.我比较懒,喜欢用第一种方法.</p>
+<ol start="4">
+<li>JavaScript中一切可以看做对象, 那么<code>Object</code>方法也可以看做一个对象, 那么它有<code>__proto__</code>属性吗? 是谁创建的?</li>
+</ol>
+<p><code>Object</code>有<code>__proto__</code>属性, 是有<code>Funcion</code>创建的</p>
+<p><a href="https://imgchr.com/i/EjepH1" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2019/05/19/EjepH1.md.png" alt="EjepH1.md.png"></a></p>
+<ol start="5">
+<li><code>Function</code>可以看做对象,那么它又是谁创建的呢?</li>
+</ol>
+<p>答案是<code>Function</code>是由自己创建的</p>
+<p><a href="https://imgchr.com/i/EjeMUP" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2019/05/19/EjeMUP.md.png" alt="EjeMUP.md.png"></a></p>
+
       
     </div>
     
     
     
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/05/18/里的数据类型转换/" rel="next" title="JS里的数据类型转换">
+                <i class="fa fa-chevron-left"></i> JS里的数据类型转换
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -303,8 +436,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -364,6 +506,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#浅谈原型与原型链"><span class="nav-text">浅谈原型与原型链</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
