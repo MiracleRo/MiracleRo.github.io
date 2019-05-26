@@ -79,12 +79,12 @@
 
 
 
-<meta name="description" content="浅谈原型与原型链 首先思考下面问题, 我们在平时使用的对象,都会有一些内置的方法.那么这些方法和属性是怎么来的呢?   如下图所示, 我新建了一个对象, 在控制台中, 有一个__proto__的属性, 里面使用的方法都在这个__proto__属性里.  也就是说, obj这个这个对象本事是没有toString()这个方法的.它是通过查找__proto__属性下的toString()来使用的.  那">
+<meta name="description" content="浅谈原型与原型链  首先思考下面问题, 我们在平时使用的对象,都会有一些内置的方法.那么这些方法和属性是怎么来的呢?  如下图所示, 我新建了一个对象, 在控制台中, 有一个__proto__的属性, 里面使用的方法都在这个__proto__属性里.  也就是说, obj这个这个对象本事是没有toString()这个方法的.它是通过查找__proto__属性下的toString()来使用的.  那">
 <meta property="og:type" content="article">
 <meta property="og:title" content="原型与原型链">
 <meta property="og:url" content="http://yoursite.com/2019/05/19/原型与原型链/index.html">
 <meta property="og:site_name" content="miraclero&#39;s blog">
-<meta property="og:description" content="浅谈原型与原型链 首先思考下面问题, 我们在平时使用的对象,都会有一些内置的方法.那么这些方法和属性是怎么来的呢?   如下图所示, 我新建了一个对象, 在控制台中, 有一个__proto__的属性, 里面使用的方法都在这个__proto__属性里.  也就是说, obj这个这个对象本事是没有toString()这个方法的.它是通过查找__proto__属性下的toString()来使用的.  那">
+<meta property="og:description" content="浅谈原型与原型链  首先思考下面问题, 我们在平时使用的对象,都会有一些内置的方法.那么这些方法和属性是怎么来的呢?  如下图所示, 我新建了一个对象, 在控制台中, 有一个__proto__的属性, 里面使用的方法都在这个__proto__属性里.  也就是说, obj这个这个对象本事是没有toString()这个方法的.它是通过查找__proto__属性下的toString()来使用的.  那">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://s2.ax1x.com/2019/05/19/EjFp7T.md.png">
 <meta property="og:image" content="https://s2.ax1x.com/2019/05/19/EjkHzj.md.png">
@@ -94,7 +94,7 @@
 <meta property="og:updated_time" content="2019-05-19T08:17:19.565Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="原型与原型链">
-<meta name="twitter:description" content="浅谈原型与原型链 首先思考下面问题, 我们在平时使用的对象,都会有一些内置的方法.那么这些方法和属性是怎么来的呢?   如下图所示, 我新建了一个对象, 在控制台中, 有一个__proto__的属性, 里面使用的方法都在这个__proto__属性里.  也就是说, obj这个这个对象本事是没有toString()这个方法的.它是通过查找__proto__属性下的toString()来使用的.  那">
+<meta name="twitter:description" content="浅谈原型与原型链  首先思考下面问题, 我们在平时使用的对象,都会有一些内置的方法.那么这些方法和属性是怎么来的呢?  如下图所示, 我新建了一个对象, 在控制台中, 有一个__proto__的属性, 里面使用的方法都在这个__proto__属性里.  也就是说, obj这个这个对象本事是没有toString()这个方法的.它是通过查找__proto__属性下的toString()来使用的.  那">
 <meta name="twitter:image" content="https://s2.ax1x.com/2019/05/19/EjFp7T.md.png">
 
 
@@ -325,8 +325,9 @@
       
 
       
-        <h2 id="浅谈原型与原型链"><a href="#浅谈原型与原型链" class="headerlink" title="浅谈原型与原型链"></a>浅谈原型与原型链</h2><ol>
-<li>首先思考下面问题, 我们在平时使用的对象,都会有一些内置的方法.那么这些方法和属性是怎么来的呢? </li>
+        <h2>浅谈原型与原型链</h2>
+<ol>
+<li>首先思考下面问题, 我们在平时使用的对象,都会有一些内置的方法.那么这些方法和属性是怎么来的呢?</li>
 </ol>
 <p>如下图所示, 我新建了一个对象, 在控制台中, 有一个<code>__proto__</code>的属性, 里面使用的方法都在这个<code>__proto__</code>属性里.</p>
 <p><a href="https://imgchr.com/i/EjFp7T" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2019/05/19/EjFp7T.md.png" alt="EjFp7T.md.png"></a></p>
@@ -337,11 +338,13 @@
 <p><a href="https://imgchr.com/i/EjkHzj" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2019/05/19/EjkHzj.md.png" alt="EjkHzj.md.png"></a></p>
 <p>由上图可以发现,对象在调用方法或属性的时候,会首先使用自己的方法,如果没有,就会在它的<code>__proto__</code>属性中查找,它也是一个对象,也会有<code>__proto__</code>属性,这样一层一层的找,一直到<code>Ojbect</code>为止.如果有就返回属性,没有会返回<code>undefined</code>.这个过程产生的链,就叫做<code>原型链</code></p>
 <ol start="3">
-<li>不知道大家对obj的<code>__proto__</code>属性是不是有点面熟呢?<br>没错,obj的<code>__proto__</code>属性和<code>Object</code>的<code>prototype</code>属性是一样的</li>
+<li>不知道大家对obj的<code>__proto__</code>属性是不是有点面熟呢?
+没错,obj的<code>__proto__</code>属性和<code>Object</code>的<code>prototype</code>属性是一样的</li>
 </ol>
 <p><a href="https://imgchr.com/i/EjAy7V" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2019/05/19/EjAy7V.md.png" alt="EjAy7V.md.png"></a></p>
 <p>通过上图,我们可以得到一个结论.</p>
-<p>对象的<code>__proto__</code>属性,就是创建它的函数的<code>prototype</code>属性<br>有的同学会问了,之前创建对象都是 <code>var a = {}</code>,图上的是<code>var a = new Object</code>. 其实这两种方法是等价的.我比较懒,喜欢用第一种方法.</p>
+<p>对象的<code>__proto__</code>属性,就是创建它的函数的<code>prototype</code>属性
+有的同学会问了,之前创建对象都是 <code>var a = {}</code>,图上的是<code>var a = new Object</code>. 其实这两种方法是等价的.我比较懒,喜欢用第一种方法.</p>
 <ol start="4">
 <li>JavaScript中一切可以看做对象, 那么<code>Object</code>方法也可以看做一个对象, 那么它有<code>__proto__</code>属性吗? 是谁创建的?</li>
 </ol>
@@ -520,7 +523,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#浅谈原型与原型链"><span class="nav-text">浅谈原型与原型链</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-text">浅谈原型与原型链</span></a></li></ol></div>
             
 
           </div>

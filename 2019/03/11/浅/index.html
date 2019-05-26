@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="今天在学习的时候看到了==这个操作符的算法，之前就有了解过，所以在这里向总结一下。虽然 ==这个操作符在日常开发并不经常使用，甚至不能通过Eslint。但是我认为还是要明白这其中的原理。 ==操作符只会产生true或false，例如x==y,会按照如下方式进行:  如果Type(x)和Type(y)相等：a. 若Type(x)为Undefined，返回trueb. 若Type(x)为Null，返回">
+<meta name="description" content="今天在学习的时候看到了==这个操作符的算法，之前就有了解过，所以在这里向总结一下。虽然 ==这个操作符在日常开发并不经常使用，甚至不能通过Eslint。但是我认为还是要明白这其中的原理。 ==操作符只会产生true或false，例如x==y,会按照如下方式进行:   如果Type(x)和Type(y)相等： a. 若Type(x)为Undefined，返回true b. 若Type(x)为Null">
 <meta name="keywords" content="JS">
 <meta property="og:type" content="article">
 <meta property="og:title" content="浅谈==">
 <meta property="og:url" content="http://yoursite.com/2019/03/11/浅/index.html">
 <meta property="og:site_name" content="miraclero&#39;s blog">
-<meta property="og:description" content="今天在学习的时候看到了==这个操作符的算法，之前就有了解过，所以在这里向总结一下。虽然 ==这个操作符在日常开发并不经常使用，甚至不能通过Eslint。但是我认为还是要明白这其中的原理。 ==操作符只会产生true或false，例如x==y,会按照如下方式进行:  如果Type(x)和Type(y)相等：a. 若Type(x)为Undefined，返回trueb. 若Type(x)为Null，返回">
+<meta property="og:description" content="今天在学习的时候看到了==这个操作符的算法，之前就有了解过，所以在这里向总结一下。虽然 ==这个操作符在日常开发并不经常使用，甚至不能通过Eslint。但是我认为还是要明白这其中的原理。 ==操作符只会产生true或false，例如x==y,会按照如下方式进行:   如果Type(x)和Type(y)相等： a. 若Type(x)为Undefined，返回true b. 若Type(x)为Null">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:updated_time" content="2019-03-11T15:25:38.502Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="浅谈==">
-<meta name="twitter:description" content="今天在学习的时候看到了==这个操作符的算法，之前就有了解过，所以在这里向总结一下。虽然 ==这个操作符在日常开发并不经常使用，甚至不能通过Eslint。但是我认为还是要明白这其中的原理。 ==操作符只会产生true或false，例如x==y,会按照如下方式进行:  如果Type(x)和Type(y)相等：a. 若Type(x)为Undefined，返回trueb. 若Type(x)为Null，返回">
+<meta name="twitter:description" content="今天在学习的时候看到了==这个操作符的算法，之前就有了解过，所以在这里向总结一下。虽然 ==这个操作符在日常开发并不经常使用，甚至不能通过Eslint。但是我认为还是要明白这其中的原理。 ==操作符只会产生true或false，例如x==y,会按照如下方式进行:   如果Type(x)和Type(y)相等： a. 若Type(x)为Undefined，返回true b. 若Type(x)为Null">
 
 
 
@@ -345,26 +345,47 @@
         <p>今天在学习的时候看到了<code>==</code>这个操作符的算法，之前就有了解过，所以在这里向总结一下。虽然 <code>==</code>这个操作符在日常开发并不经常使用，甚至不能通过Eslint。但是我认为还是要明白这其中的原理。</p>
 <p><code>==</code>操作符只会产生<code>true</code>或<code>false</code>，例如x<code>==</code>y,会按照如下方式进行:</p>
 <ol>
-<li><p>如果Type(x)和Type(y)相等：<br>a. 若Type(x)为<code>Undefined</code>，返回<code>true</code><br>b. 若Type(x)为<code>Null</code>，返回<code>true</code><br>c. 若Type(x)为<code>Number</code>:       </p>
+<li>
+<p>如果Type(x)和Type(y)相等：
+a. 若Type(x)为<code>Undefined</code>，返回<code>true</code>
+b. 若Type(x)为<code>Null</code>，返回<code>true</code>
+c. 若Type(x)为<code>Number</code>:</p>
 <ul>
 <li>x为<code>NaN</code>,返回<code>false</code></li>
 <li>y为<code>NaN</code>,返回<code>false</code></li>
 <li>x与y数值相等，返回<code>true</code></li>
 <li>x为<code>+0</code>，y为<code>-0</code>，返回<code>true</code></li>
-<li>x为<code>-0</code>，x为<code>+0</code>，返回<code>true</code>  </li>
+<li>x为<code>-0</code>，x为<code>+0</code>，返回<code>true</code></li>
 <li>返回<code>false</code></li>
 </ul>
-<p>d. 若Type(x)为<code>String</code>，则x和y为完全相同的字符序列是返回<code>true</code>，否则返回<code>false</code><br>e. 若Type(x)为<code>Boolean</code>，则x和y同为<code>true</code>或<code>false</code>返回<code>true</code>，否则返回<code>false</code><br>f. 若Type(x)为<code>Ojbect</code>，则x和y指向同一引用对象返回<code>true</code>, 否则返回<code>false</code></p>
+<p>d. 若Type(x)为<code>String</code>，则x和y为完全相同的字符序列是返回<code>true</code>，否则返回<code>false</code>
+e. 若Type(x)为<code>Boolean</code>，则x和y同为<code>true</code>或<code>false</code>返回<code>true</code>，否则返回<code>false</code>
+f. 若Type(x)为<code>Ojbect</code>，则x和y指向同一引用对象返回<code>true</code>, 否则返回<code>false</code></p>
 </li>
-<li>若x为<code>Undefined</code>且y为<code>Null</code>，或x为<code>Null</code>且y为<code>Undefined</code>返回<code>true</code>，否则返回<code>false</code></li>
-<li>若Type(x)为<code>String</code>，且Type(y)为<code>Number</code>，返回 ToNumber(x)<code>==</code>y的结果</li>
-<li>若Type(x)为<code>Number</code>，且Type(y)为<code>String</code>，返回x<code>==</code>ToNumber(y)的结果</li>
-<li>若Type(x)为<code>Boolean</code>，返回ToNumber(x) <code>==</code>y的结果</li>
-<li>若Type(y)为<code>Boolean</code>，返回x <code>==</code>ToNumber(y)的结果</li>
-<li>若Type(x)为<code>Object</code>，且Type(y)为<code>String</code>或<code>Number</code>，返回ToPrimitive(x) <code>==</code>y的结果</li>
-<li>若Type(x)为<code>String</code>或<code>Number</code>，且Type(y)为<code>Object</code>，返回x<code>==</code>ToPrimitvie(y)的结果 </li>
+<li>
+<p>若x为<code>Undefined</code>且y为<code>Null</code>，或x为<code>Null</code>且y为<code>Undefined</code>返回<code>true</code>，否则返回<code>false</code></p>
+</li>
+<li>
+<p>若Type(x)为<code>String</code>，且Type(y)为<code>Number</code>，返回 ToNumber(x)<code>==</code>y的结果</p>
+</li>
+<li>
+<p>若Type(x)为<code>Number</code>，且Type(y)为<code>String</code>，返回x<code>==</code>ToNumber(y)的结果</p>
+</li>
+<li>
+<p>若Type(x)为<code>Boolean</code>，返回ToNumber(x) <code>==</code>y的结果</p>
+</li>
+<li>
+<p>若Type(y)为<code>Boolean</code>，返回x <code>==</code>ToNumber(y)的结果</p>
+</li>
+<li>
+<p>若Type(x)为<code>Object</code>，且Type(y)为<code>String</code>或<code>Number</code>，返回ToPrimitive(x) <code>==</code>y的结果</p>
+</li>
+<li>
+<p>若Type(x)为<code>String</code>或<code>Number</code>，且Type(y)为<code>Object</code>，返回x<code>==</code>ToPrimitvie(y)的结果</p>
+</li>
 </ol>
-<p>举个例子：[ ]<code>==</code>![ ]：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 首先将![]转换为`Boolean`类型</span></span><br><span class="line">[] == <span class="literal">false</span></span><br><span class="line"><span class="comment">// 根据第6条 返回 [] == ToNumber(false)</span></span><br><span class="line">[] == <span class="number">0</span></span><br><span class="line"><span class="comment">// 根据第7条 返回 ToPrimitive([]) == 0</span></span><br><span class="line"><span class="comment">// [].toString() -&gt; ''</span></span><br><span class="line"><span class="string">''</span> == <span class="number">0</span></span><br><span class="line"><span class="comment">// 根据第3条 返回 ToNmber('') == 0</span></span><br><span class="line"><span class="number">0</span> == <span class="number">0</span> <span class="comment">// true</span></span><br></pre></td></tr></table></figure></p>
+<p>举个例子：[ ]<code>==</code>![ ]：
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 首先将![]转换为`Boolean`类型</span></span><br><span class="line">[] == <span class="literal">false</span></span><br><span class="line"><span class="comment">// 根据第6条 返回 [] == ToNumber(false)</span></span><br><span class="line">[] == <span class="number">0</span></span><br><span class="line"><span class="comment">// 根据第7条 返回 ToPrimitive([]) == 0</span></span><br><span class="line"><span class="comment">// [].toString() -&gt; ''</span></span><br><span class="line"><span class="string">''</span> == <span class="number">0</span></span><br><span class="line"><span class="comment">// 根据第3条 返回 ToNmber('') == 0</span></span><br><span class="line"><span class="number">0</span> == <span class="number">0</span> <span class="comment">// true</span></span><br></pre></td></tr></table></figure></p>
 <p>PS: 这个ToPrimitive()方法打算也要写一篇笔记</p>
 
       

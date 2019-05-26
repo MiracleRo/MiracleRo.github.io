@@ -79,13 +79,13 @@
 
 
 
-<meta name="description" content="简单的css布局技巧 左右布局/左中右布局：这里使用css中的flex布局可以快速简单的完成左右/左中右布局。HTML:    12345&amp;lt;div class=&quot;wrapper&quot;&amp;gt;  &amp;lt;div class=&quot;item&quot;&amp;gt;&amp;lt;/div&amp;gt;  &amp;lt;div class=&quot;item&quot;&amp;gt;&amp;lt;/div&amp;gt;  &amp;lt;div class=&quot;item&quot;&amp;gt;&amp;l">
+<meta name="description" content="简单的css布局技巧  左右布局/左中右布局： 这里使用css中的flex布局可以快速简单的完成左右/左中右布局。 HTML: 12345&amp;lt;div class=&quot;wrapper&quot;&amp;gt;  &amp;lt;div class=&quot;item&quot;&amp;gt;&amp;lt;/div&amp;gt;  &amp;lt;div class=&quot;item&quot;&amp;gt;&amp;lt;/div&amp;gt;  &amp;lt;div class=&quot;item&quot;&amp;gt;&amp;l">
 <meta name="keywords" content="css">
 <meta property="og:type" content="article">
 <meta property="og:title" content="css布局">
 <meta property="og:url" content="http://yoursite.com/2019/03/17/css布局/index.html">
 <meta property="og:site_name" content="miraclero&#39;s blog">
-<meta property="og:description" content="简单的css布局技巧 左右布局/左中右布局：这里使用css中的flex布局可以快速简单的完成左右/左中右布局。HTML:    12345&amp;lt;div class=&quot;wrapper&quot;&amp;gt;  &amp;lt;div class=&quot;item&quot;&amp;gt;&amp;lt;/div&amp;gt;  &amp;lt;div class=&quot;item&quot;&amp;gt;&amp;lt;/div&amp;gt;  &amp;lt;div class=&quot;item&quot;&amp;gt;&amp;l">
+<meta property="og:description" content="简单的css布局技巧  左右布局/左中右布局： 这里使用css中的flex布局可以快速简单的完成左右/左中右布局。 HTML: 12345&amp;lt;div class=&quot;wrapper&quot;&amp;gt;  &amp;lt;div class=&quot;item&quot;&amp;gt;&amp;lt;/div&amp;gt;  &amp;lt;div class=&quot;item&quot;&amp;gt;&amp;lt;/div&amp;gt;  &amp;lt;div class=&quot;item&quot;&amp;gt;&amp;l">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://i.loli.net/2019/03/17/5c8e4f1d71d03.png">
 <meta property="og:image" content="https://i.loli.net/2019/03/17/5c8e5090c58b3.png">
@@ -93,7 +93,7 @@
 <meta property="og:updated_time" content="2019-03-17T13:57:07.836Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="css布局">
-<meta name="twitter:description" content="简单的css布局技巧 左右布局/左中右布局：这里使用css中的flex布局可以快速简单的完成左右/左中右布局。HTML:    12345&amp;lt;div class=&quot;wrapper&quot;&amp;gt;  &amp;lt;div class=&quot;item&quot;&amp;gt;&amp;lt;/div&amp;gt;  &amp;lt;div class=&quot;item&quot;&amp;gt;&amp;lt;/div&amp;gt;  &amp;lt;div class=&quot;item&quot;&amp;gt;&amp;l">
+<meta name="twitter:description" content="简单的css布局技巧  左右布局/左中右布局： 这里使用css中的flex布局可以快速简单的完成左右/左中右布局。 HTML: 12345&amp;lt;div class=&quot;wrapper&quot;&amp;gt;  &amp;lt;div class=&quot;item&quot;&amp;gt;&amp;lt;/div&amp;gt;  &amp;lt;div class=&quot;item&quot;&amp;gt;&amp;lt;/div&amp;gt;  &amp;lt;div class=&quot;item&quot;&amp;gt;&amp;l">
 <meta name="twitter:image" content="https://i.loli.net/2019/03/17/5c8e4f1d71d03.png">
 
 
@@ -346,26 +346,36 @@
       
 
       
-        <h2 id="简单的css布局技巧"><a href="#简单的css布局技巧" class="headerlink" title="简单的css布局技巧"></a>简单的css布局技巧</h2><ol>
-<li><p>左右布局/左中右布局：<br>这里使用css中的flex布局可以快速简单的完成左右/左中右布局。<br>HTML:   </p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"wrapper"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"item"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"item"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"item"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>CSS:</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.wrapper</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: flex;</span><br><span class="line">  <span class="attribute">justify-content</span>: space-between;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.item</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">30%</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>效果如下：<br><img src="https://i.loli.net/2019/03/17/5c8e4f1d71d03.png" alt="dddd.png"></p>
-</li>
+        <h2>简单的css布局技巧</h2>
+<ol>
+<li>左右布局/左中右布局：<br>
+这里使用css中的flex布局可以快速简单的完成左右/左中右布局。
+HTML:<br>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"wrapper"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"item"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"item"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"item"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
 </ol>
+<p>CSS:</p>
+<p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.wrapper</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: flex;</span><br><span class="line">  <span class="attribute">justify-content</span>: space-between;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.item</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">30%</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>效果如下：
+<img src="https://i.loli.net/2019/03/17/5c8e4f1d71d03.png" alt="dddd.png"></p>
 <p>这个布局的重点在于flex布局和justify-content属性，有兴趣的同学可以查看<a href="http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html" target="_blank" rel="noopener">阮一峰的flex布局</a></p>
 <ol start="2">
-<li>水平居中<br>水平居中算是很基础的布局了</li>
+<li>水平居中
+水平居中算是很基础的布局了</li>
 </ol>
-<p>HTML:<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"text"</span>&gt;</span>text<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
-<p>CSS:<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.text</span> &#123;</span><br><span class="line">  <span class="attribute">text-algin</span>: center</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>效果如下：<br><img src="https://i.loli.net/2019/03/17/5c8e5090c58b3.png" alt="屏幕快照 2019-03-17 下午9.49.42.png"></p>
+<p>HTML:
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"text"</span>&gt;</span>text<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>CSS:
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.text</span> &#123;</span><br><span class="line">  <span class="attribute">text-algin</span>: center</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>效果如下：
+<img src="https://i.loli.net/2019/03/17/5c8e5090c58b3.png" alt="屏幕快照 2019-03-17 下午9.49.42.png"></p>
 <ol start="3">
-<li>垂直居中<br>垂直居中的实现方案很多，这里简单的介绍我常用的两种：</li>
+<li>垂直居中
+垂直居中的实现方案很多，这里简单的介绍我常用的两种：</li>
 </ol>
-<p>HTML：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"wrapper"</span>&gt;</span></span><br><span class="line">  text</span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
-<p>CSS:<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.wrapper</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: table-cell;</span><br><span class="line">  <span class="attribute">vertical-align</span>: middle;</span><br><span class="line">  <span class="attribute">text-align</span>: center;        </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>HTML：
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"wrapper"</span>&gt;</span></span><br><span class="line">  text</span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>CSS:
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.wrapper</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: table-cell;</span><br><span class="line">  <span class="attribute">vertical-align</span>: middle;</span><br><span class="line">  <span class="attribute">text-align</span>: center;        </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <p>效果如下：</p>
 <p><img src="https://i.loli.net/2019/03/17/5c8e521915de7.png" alt="屏幕快照 2019-03-17 下午9.56.10.png"></p>
 
@@ -542,7 +552,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#简单的css布局技巧"><span class="nav-text">简单的css布局技巧</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-text">简单的css布局技巧</span></a></li></ol></div>
             
 
           </div>
